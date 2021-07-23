@@ -10,4 +10,4 @@ RUN cp -rvf lamoda/* .
 RUN rm -rf lamoda.zip lamoda
 CMD service apache2 start
 CMD service apache2 enable
-EXPOSE 80
+EXPOSE 80 
