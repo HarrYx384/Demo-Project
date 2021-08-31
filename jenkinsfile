@@ -1,7 +1,5 @@
 pipeline{
-    agent{
-        label "node"
-    }
+    agent any
     stages {
         stage("pull source code"){
             steps{
@@ -19,5 +17,4 @@ pipeline{
             sh "ps -eaf"
             }
         }
-    }
 }
