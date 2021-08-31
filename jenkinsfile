@@ -1,0 +1,23 @@
+pipeline{
+    agent{
+        label "node"
+    }
+    stages {
+        stage("pull source code"){
+            steps{
+                echo "pull code from github"
+            }
+        }
+        stage("build source code"){
+            steps{
+            echo "building the code from using docker file"
+            }
+        }
+        stage("deploy the code"){
+            steps{
+            echo "new tech"
+            sh "ps -eaf"
+            }
+        }
+    }
+}
