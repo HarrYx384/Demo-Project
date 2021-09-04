@@ -14,7 +14,7 @@ pipeline{
         stage("deploy the code"){
             steps{
             echo "new tech"
-            sh "ps -eaf"
+            sh "ps -f"
             }
         }
         post {
