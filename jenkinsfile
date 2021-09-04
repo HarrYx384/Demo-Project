@@ -17,7 +17,7 @@ pipeline{
             sh "ps -f"
             }
         }
-        post {
+        post{
         always {
             emailext body: 'nothing imp', subject: 'build fail', to: 'vikashyadava51@gmail.com'
         }
