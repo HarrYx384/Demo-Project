@@ -17,5 +17,10 @@ pipeline{
             sh "ps -eaf"
             }
         }
+        post {
+        always {
+            emailext body: 'nothing imp', subject: 'build fail', to: 'vikashyadava51@gmail.com'
+        }
+    }
     }
 }
