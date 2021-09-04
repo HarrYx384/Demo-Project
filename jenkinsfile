@@ -17,10 +17,5 @@ pipeline{
             sh "ps -f"
             }
         }
-        post{
-          always{
-           echo "hello worl"
-        }
-      }
     }
 }
