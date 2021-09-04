@@ -18,9 +18,9 @@ pipeline{
             }
         }
         post{
-        always{
+          always{
             emailext body: 'nothing imp', subject: 'build fail', to: 'vikashyadava51@gmail.com'
         }
-    }
+      }
     }
 }
